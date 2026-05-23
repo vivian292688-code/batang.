@@ -256,63 +256,98 @@
     data-lng：放 Google 地圖查到的經度
     data-zoom：地圖遠近，15~17 最常用，數字越大越近
   ===================================================== -->
-  <section id="attractions">
-    <div class="section-title">
-      <h2>景點導覽｜Attractions</h2>
-      <p>點擊左側景點卡片，右側地圖會自動移動到對應位置</p>
-    </div>
+<section id="attractions">
+  <div class="section-title">
+    <h2>景點導覽｜Attractions</h2>
+    <p>點擊左側景點卡片，右側地圖會自動移動到對應位置</p>
+  </div>
 
-    <div class="storymap">
-      <div class="story-list">
-        <!-- 教學：第一個景點有 active，代表網頁一打開時預設顯示這個景點 -->
-        <div class="story-card active" data-lat="23.984396545409314" data-lng="120.55957403768117" data-zoom="16">
-           <div class="story-card" data-lat="23.98756251199652" data-lng="120.5577258837089" data-zoom="16">
-           <div class="story-card" data-lat="23.974853761810476" data-lng="120.56559629535225" data-zoom="16">
-           <div class="story-card" data-lat="23.987936624836724" data-lng="120.55707128001008" data-zoom="16">  
-          <!-- 教學：tag 是景點分類名稱 -->
-          <span class="tag">Beliefs & Stories</span>
+  <div class="storymap">
+    <div class="story-list">
 
-          <!-- 教學：h3 是景點標題，可以改成寺廟或景點名稱 -->
-          <h3>信仰與故事｜Beliefs & Stories</h3>
-
-          <!-- 教學：p 是景點簡介，建議控制在 1~3 句 -->
-          <p>廟埕、香火與節慶，陪伴著居民走過農忙歲月，也保存著地方最真實的人情與故事。</p>
-        </div>
-
-        <!-- 教學：第二個景點，複製這整段就可以新增景點 -->
-        <div class="story-card" data-lat="23.985737533116836" data-lng="120.55667866651686" data-zoom="16">
-        <div class="story-card" data-lat="23.984885632162012" data-lng="120.55365999535238" data-zoom="16">
-        <div class="story-card" data-lat="23.985678718912066" data-lng="120.55667866651686" data-zoom="16">
-        <div class="story-card" data-lat="23.98640409222695" data-lng="120.55578817315883" data-zoom="16">
-        <div class="story-card" data-lat="23.983315621971478" data-lng="120.55375008000988" data-zoom="16">
-          <div class="story-card" data-lat="23.98090645809134" data-lng="120.55779548000973" data-zoom="16">
-          <span class="tag">Rural Landscape</span>
-          <h3>葡萄園景觀｜Grape Vineyard</h3>
-          <p>走進葡萄園與田園小徑，感受擺塘村農業景觀與鄉村日常風貌。</p>
-        </div>
-          
-        <div class="story-card" data-lat="23.984396545409314" data-lng="120.55957403768117" data-zoom="16">
-          <span class="tag">Farm Experience</span>
-          <h3>農遊體驗｜Farm Experience</h3>
-          <p>結合葡萄產業、農產品特產與地方體驗活動，讓遊客認識農村產業文化。</p>
-        </div>
+      <div class="story-card active" data-lat="23.984396545409314" data-lng="120.55957403768117" data-zoom="16">
+        <span class="tag">Beliefs & Stories</span>
+        <h3>信仰與故事①｜Beliefs & Stories</h3>
+        <p>廟埕、香火與節慶，陪伴著居民走過農忙歲月，也保存著地方最真實的人情與故事。</p>
       </div>
 
-      <!-- 教學：這裡是地圖顯示的位置，不要刪掉。地圖內容由最下面的 script 自動產生。 -->
-      <div id="map"></div>
-    </div>
-  </section>
+      <div class="story-card" data-lat="23.98756251199652" data-lng="120.5577258837089" data-zoom="16">
+        <span class="tag">Beliefs & Stories</span>
+        <h3>信仰與故事②｜Beliefs & Stories</h3>
+        <p>地方信仰空間不只是祭拜場所，也是居民交流、凝聚情感與延續文化的重要核心。</p>
+      </div>
 
-  <section id="route">
-    <div class="section-title">
-      <h2>遊程推薦｜Travel Route</h2>
-      <p>適合遊客與居民共同參與的慢遊路線</p>
+      <div class="story-card" data-lat="23.974853761810476" data-lng="120.56559629535225" data-zoom="16">
+        <span class="tag">Beliefs & Stories</span>
+        <h3>信仰與故事③｜Beliefs & Stories</h3>
+        <p>透過廟宇與地方故事，可以看見擺塘村居民與土地之間長久累積的生活記憶。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.987936624836724" data-lng="120.55707128001008" data-zoom="16">
+        <span class="tag">Beliefs & Stories</span>
+        <h3>信仰與故事④｜Beliefs & Stories</h3>
+        <p>信仰承載地方文化，也讓遊客能從故事中理解擺塘村的日常與人情。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.985737533116836" data-lng="120.55667866651686" data-zoom="16">
+        <span class="tag">Rural Landscape</span>
+        <h3>葡萄園景觀①｜Grape Vineyard</h3>
+        <p>走進葡萄園與田園小徑，感受擺塘村農業景觀與鄉村日常風貌。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.984885632162012" data-lng="120.55365999535238" data-zoom="16">
+        <span class="tag">Rural Landscape</span>
+        <h3>葡萄園景觀②｜Grape Vineyard</h3>
+        <p>葡萄園展現擺塘村的產業特色，也呈現農村與土地共生的生活樣貌。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.985678718912066" data-lng="120.55667866651686" data-zoom="16">
+        <span class="tag">Rural Landscape</span>
+        <h3>葡萄園景觀③｜Grape Vineyard</h3>
+        <p>沿著農路漫步，可以看見葡萄產業與鄉村風景交織出的地方特色。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.98640409222695" data-lng="120.55578817315883" data-zoom="16">
+        <span class="tag">Rural Landscape</span>
+        <h3>葡萄園景觀④｜Grape Vineyard</h3>
+        <p>此處適合觀察農村景觀、拍攝田園風光，感受擺塘村慢活氛圍。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.983315621971478" data-lng="120.55375008000988" data-zoom="16">
+        <span class="tag">Rural Landscape</span>
+        <h3>葡萄園景觀⑤｜Grape Vineyard</h3>
+        <p>葡萄園景觀不只是農業生產空間，也是擺塘村重要的地方風景記憶。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.98090645809134" data-lng="120.55779548000973" data-zoom="16">
+        <span class="tag">Rural Landscape</span>
+        <h3>葡萄園景觀⑥｜Grape Vineyard</h3>
+        <p>透過葡萄園與田園景觀，遊客能更貼近擺塘村的農村生活與產業文化。</p>
+      </div>
+
+      <div class="story-card" data-lat="23.984396545409314" data-lng="120.55957403768117" data-zoom="16">
+        <span class="tag">Farm Experience</span>
+        <h3>農遊體驗｜Farm Experience</h3>
+        <p>結合葡萄產業、農產品特產與地方體驗活動，讓遊客認識農村產業文化。</p>
+      </div>
+
     </div>
-    <div class="route">
-      <h3>半日遊 Half-Day Trip</h3>
-      <p>廟宇巡禮 → 葡萄園景觀 → 社區發展協會手作體驗 → 鄉村小徑散步</p>
-    </div>
-  
+
+    <div id="map"></div>
+  </div>
+</section>
+
+<section id="route">
+  <div class="section-title">
+    <h2>遊程推薦｜Travel Route</h2>
+    <p>適合遊客與居民共同參與的慢遊路線</p>
+  </div>
+
+  <div class="route">
+    <h3>半日遊 Half-Day Trip</h3>
+    <p>廟宇巡禮 → 葡萄園景觀 → 社區發展協會手作體驗 → 鄉村小徑散步</p>
+  </div>
+</section>
   </section>
 
   <section id="contact">
